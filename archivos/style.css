@@ -1,0 +1,298 @@
+* { padding:0; margin:0;}
+body {
+  font-family: "Cambria";
+  font-size: 18px;
+ }
+ h1, h2 { font-size: 32px; }
+p { text-align:center; }
+.izquierda { text-align: left; }
+.centro { text-align: center; }
+.derecha { text-align: right; }
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  padding: 0;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 997;
+}
+.un_tercio { 
+  width: 48%;  
+  display:inline-block; 
+  vertical-align: top; 
+}
+#header .logo {
+ text-align: center;
+  margin:0 50px;
+  vertical-align:middle;
+  display:inline-block;
+}
+.logo img { width:auto; }
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+#nav-menu-container { 
+	width:100%; height: 40px; padding-top:10px; 
+	
+	background-color: rgba(3, 166, 214, 0.80);
+	margin-bottom:20px;
+	z-index:1;
+	}
+.nav-menu {
+	
+	 position:absolute;
+	right:50px; 
+}
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 0 8px 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #FFF;
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+  color: #0f5165;
+}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #333;
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+}
+
+
+
+.intro{ 
+  
+ display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../imagenes/escenario.png) top center fixed;
+  background-size: cover;
+ 
+  
+}
+.intro2{
+	display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../imagenes/escenario2.jpeg) top center fixed;
+  background-size: cover;
+	
+	
+}
+.intro3{
+	
+	display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../imagenes/escenario3.png) top center fixed;
+  background-size: cover;
+	
+	
+	
+	
+}
+.intro4{
+	
+	display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../imagenes/escenario4.) top center fixed;
+  background-size: cover;
+	
+	
+	
+	
+}
+.gradient::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&0+9,0+15,1+100 */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(39,96,160,0) 9%, rgba(45,102,165,0) 15%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(39,96,160,0) 9%,rgba(45,102,165,0) 15%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(39,96,160,0) 9%,rgba(45,102,165,0) 15%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+    }
+
+.mislogos { float: left; width:100%; margin-bottom: 20px; }
+.contenido { 
+  width:100%;
+  float: center;
+  margin-bottom: 10px;
+}
+
+.explicacion { 
+	padding:20px;
+	float: left;
+  margin:0 20px;
+  color: #1b1b1b;
+	background-color: rgba(199, 230, 241, 0.7);
+	width:45%; height: auto; 
+	
+	position:relative; 
+}
+.explicacion2{
+	padding:20px;
+	float: left;
+  margin:0 20px;
+  color: #1b1b1b;
+	background-color: rgba(199, 230, 241, 0.7);
+	width:94%; height: auto; 
+	
+	
+}
+.animacion { 
+	float: left;
+	width:45%; height: 55%; position:relative;
+}
+.animacion2 { 
+	float: left;
+	width:auto; height: auto; position:relative;
+	margin: 50px 255px;
+}
+.animacion3 { 
+	float: left;
+	width:auto; height: auto; position:relative;
+	margin: 30px 350px;
+}
+
+.animacion img { width: 100%; }
+.centrar { text-align: center; }
+.titulos { background:#000; padding:8px 0; color:#FFF; }
+
+.creditos {
+	border-top: solid 1px #46455d !important;
+  text-align: center;
+  background-color: #029bc9;
+  padding: 1.2rem 0;
+  
+}
+
+.creditos2 {
+	
+  text-align: center;
+  background-color: #A1D6F9;
+  padding: 1.2rem 0;
+  
+}
+
+.flecha{
+	  
+	width: 74%;  
+  display:inline-block; 
+  vertical-align: top; 
+	
+	text-align: left;
+	
+	
+}
+
+.flechac{
+	
+  
+	width: 100%;  
+  display:inline-block; 
+  vertical-align: top; 
+	
+	text-align: center;
+	
+	
+}
+
+
+.flechaa{
+	width: 10%;  
+  display:inline-block; 
+  vertical-align: top; 
+	
+	text-align: left;
+	
+	
+	
+}
+.imag{
+	width: 100%;  
+  display:inline-block; 
+  vertical-align: top; 
+	
+	text-align: right;
+	
+	
+	
+}
